@@ -4,7 +4,7 @@ matplotlib.use('Agg')  # 👈 必须在 import pyplot 之前！
 import matplotlib.pyplot as plt
 
 # --- 参数 ---
-N = 100  # Grid 大小 N×N
+N = 200  # Grid 大小 N×N
 gamma = 0.999
 theta = 1.0
 actions = [0, 1, 2, 3]  # up, right, down, left

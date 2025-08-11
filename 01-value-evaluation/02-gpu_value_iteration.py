@@ -52,8 +52,8 @@ matplotlib.use('Agg')  # 👈 必须在 import pyplot 之前！
 import matplotlib.pyplot as plt
 
 # --- 参数 ---
-N = 100  # Grid 大小 N×N
-gamma = 0.999
+N = 400  # Grid 大小 N×N
+gamma = 1.0 - 2.0 / 10000.0  # 折扣因子
 theta = 1.0
 actions = [0, 1, 2, 3]  # up, right, down, left
 action_names = {0: '^', 1: '>', 2: 'v', 3: '<'}
@@ -270,4 +270,4 @@ def plot_maze_with_policy(policy, maze, N, save_path='maze_with_policy.png'):
     print(f"✅ 迷宫和策略图已保存为: {save_path}")
 
 # 调用函数
-plot_maze_with_policy(policy, maze, N)  # 请确保这里的N, policy, maze是之前定义好的变量
+# plot_maze_with_policy(policy, maze, N)  # 请确保这里的N, policy, maze是之前定义好的变量
